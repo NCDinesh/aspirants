@@ -15,25 +15,25 @@ const allServices = [
   {
     name: 'Student Accommodation',
     slug: 'student-accommodation',
-    img: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
+    img: 'https://plus.unsplash.com/premium_photo-1724061887314-347affe7df0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnQlMjBhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
     description: 'Find the perfect place to live with our student accommodation support. We connect you with safe, affordable, and accessible housing near your campus.',
   },
   {
     name: 'Education Counseling',
     slug: 'education-counseling',
-    img: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9uJTIwY291bnNlbGxpbmd8ZW58MHx8MHx8fDA%3D',
     description: 'Get personalized guidance from our education counselors on course selection, career goals, and choosing the right university abroad.',
   },
   {
     name: 'Scholarship Guidance',
     slug: 'scholarship-guidance',
-    img: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80',
+    img: 'https://media.istockphoto.com/id/667305600/photo/young-man-filling-scholarship-application-form-on-internet.webp?a=1&b=1&s=612x612&w=0&k=20&c=XJE_cVpCLlkRaSSy1IUGzBzoAETVAIuG4rVf5L7NnrI=',
     description: 'Our team helps you explore and apply for various scholarships based on merit, need, and destination-specific offers from partner universities.',
   },
   {
     name: 'University Admission',
     slug: 'university-admission',
-    img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+    img: 'https://plus.unsplash.com/premium_photo-1682974407089-235ad9922288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXZlcnNpdGllc3xlbnwwfHwwfHx8MA%3D%3D',
     description: 'From choosing universities to submitting applications, we guide you throughout the university admission process to ensure a successful outcome.',
   }
 ];
@@ -52,7 +52,7 @@ const ServiceDetail = () => {
 
 return (
   <div className="max-w-6xl mx-auto px-4 py-12">
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+    <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
 
       {/* Text Content */}
       <div className="md:w-1/2">
@@ -80,7 +80,7 @@ return (
         <img
           src={service.img}
           alt={service.name}
-          className="w-full h-64 md:h-80 object-cover rounded-xl shadow"
+          className="w-full h-64 md:h-full object-cover rounded-xl shadow"
         />
       </div>
 

@@ -28,22 +28,22 @@ const services = [
   },
   {
     name: 'Student Accommodation',
-    img: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80',
+    img: 'https://plus.unsplash.com/premium_photo-1724061887314-347affe7df0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnQlMjBhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
     slug: 'student-accommodation',
   },
   {
     name: 'Education Counseling',
-    img: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80',
+    img: 'https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9uJTIwY291bnNlbGxpbmd8ZW58MHx8MHx8fDA%3D',
     slug: 'education-counseling',
   },
   {
     name: 'Scholarship Guidance',
-    img: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
+    img: 'https://media.istockphoto.com/id/667305600/photo/young-man-filling-scholarship-application-form-on-internet.webp?a=1&b=1&s=612x612&w=0&k=20&c=XJE_cVpCLlkRaSSy1IUGzBzoAETVAIuG4rVf5L7NnrI=',
     slug: 'scholarship-guidance',
   },
   {
     name: 'University Admission',
-    img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80',
+    img: 'https://plus.unsplash.com/premium_photo-1682974407089-235ad9922288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXZlcnNpdGllc3xlbnwwfHwwfHx8MA%3D%3D',
     slug: 'university-admission',
   },
 ];

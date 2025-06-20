@@ -47,7 +47,7 @@ const Footer = () => (
 
         <div className='flex flex-col gap-3'>
         <p className="text-sm flex items-center gap-2">
-          <FaPhoneAlt /> +977 4531221, 01 4516197, 5971526
+          <FaPhoneAlt /> +977 9811111111, 01-5971526
         </p>
         <p className="text-sm flex items-center gap-2">
           <FaEnvelope /> info@aspirants.edu.np
@@ -73,7 +73,7 @@ const Footer = () => (
         <ul className="grid grid-cols-2 gap-y-2 gap-x-6 text-sm">
           {quickLinks.map(link => (
             <li key={link.name}>
-              <Link to={link.path} className=" text-white hover:text-primary">{link.name}</Link>
+              <Link to={link.path} className=" text-white hover:text-secondary">{link.name}</Link>
             </li>
           ))}
         </ul>

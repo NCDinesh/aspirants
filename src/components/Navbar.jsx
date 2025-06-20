@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 
 const countries = [
   { name: 'Australia', flag: '🇦🇺', path: '/study-abroad/australia' ,src:"https://flagcdn.com/au.svg" },
@@ -54,12 +56,21 @@ const Navbar = () => {
         <Link to="/" className="text-2xl font-bold text-primary">
         <img src="./images/transparentlogo.png" alt=""  className='size-24'/>
         </Link>
-        <button className="md:hidden text-secondary" onClick={() => setOpen(!open)}>
-          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        <div className={`md:flex lg:gap-4 items-center ${open ? 'block' : 'hidden'} absolute md:static left-0 top-16 w-full md:w-auto bg-white/95 md:bg-transparent shadow md:shadow-none p-4 md:p-0 md:gap-1`}>
+   <button className="md:hidden text-secondary" onClick={() => setOpen(!open)} aria-label="Toggle Menu">
+  {open ? (
+    // Close (X)
+    <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  ) : (
+    // Hamburger
+    <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  )}
+</button>
+
+        <div className={`md:flex lg:gap-4 items-center ${open ? 'block' : 'hidden'} absolute md:static left-0 top-16 w-full md:w-auto bg-white/95 md:bg-transparent shadow md:shadow-none p-4 md:p-0 md:gap-1 max-md:mt-4`}>
           {navLinks.map(link =>
             link.dropdown ? (
               <div
@@ -69,7 +80,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className="block py-2 px-4 text-secondary hover:text-primary font-medium flex items-center gap-1"
+                  className=" py-2 px-4 text-secondary hover:text-primary font-medium flex items-center gap-1  border-b-2 border-white hover:border-primary"
                   type="button"
                 >
                   {link.name}
@@ -96,14 +107,22 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <Link
-                key={link.name}
-                to={link.path}
-                className="block py-2 px-4 text-secondary hover:text-primary font-medium"
-                onClick={() => setOpen(false)}
-              >
-                {link.name}
-              </Link>
+              <NavLink
+  key={link.name}
+  to={link.path}
+  onClick={() => setOpen(false)}
+className={({ isActive }) =>
+  `block py-2 px-4 font-medium border-b-2 transition
+  ${isActive ? 'text-primary border-primary' : 'text-secondary border-white'}
+  hover:text-primary
+  md:hover:border-primary
+  hover:border-white
+  w-max`
+}
+
+>
+  {link.name}
+</NavLink>
             )
           )}
         </div>
