@@ -6,14 +6,12 @@ const countries = [
   { name: 'USA', flag: '🇺🇸', path: '/study-abroad/usa', src:"https://flagcdn.com/us.svg"},
   { name: 'New Zealand', flag: '🇳🇿', path: '/study-abroad/new-zealand',src:"https://flagcdn.com/nz.svg" },
   { name: 'Canada', flag: '🇨🇦', path: '/study-abroad/canada',src:"https://flagcdn.com/ca.svg" },
-  { name: 'UK', flag: '🇬🇧', path: '/study-abroad/uk' },
-  { name: 'Denmark', flag: '🇩🇰', path: '/study-abroad/denmark' },
-  { name: 'Ireland', flag: '🇮🇪', path: '/study-abroad/ireland' },
-  { name: 'Japan', flag: '🇯🇵', path: '/study-abroad/japan' },
-  { name: 'South Korea', flag: '🇰🇷', path: '/study-abroad/south-korea' },
-  { name: 'Germany', flag: '🇩🇪', path: '/study-abroad/germany' },
-  { name: 'France', flag: '🇫🇷', path: '/study-abroad/france' },
-  { name: 'Switzerland', flag: '🇨🇭', path: '/study-abroad/switzerland' },
+  { name: 'UK', flag: '🇬🇧', path: '/study-abroad/uk',src:"https://flagcdn.com/gb.svg" },
+  { name: 'Denmark', flag: '🇩🇰', path: '/study-abroad/denmark',src:"https://flagcdn.com/dk.svg" },
+  { name: 'Japan', flag: '🇯🇵', path: '/study-abroad/japan',src:"https://flagcdn.com/jp.svg" },
+  { name: 'South Korea', flag: '🇰🇷', path: '/study-abroad/south-korea',src:"https://flagcdn.com/kr.svg"},
+  { name: 'Germany', flag: '🇩🇪', path: '/study-abroad/germany' ,src:"https://flagcdn.com/de.svg"},
+
 ];
 
 const navLinks = [
@@ -22,7 +20,6 @@ const navLinks = [
   { name: 'Study Abroad', path: '/study-abroad', dropdown: true },
   { name: 'Test Preparation', path: '/test-preparation' },
   { name: 'Events', path: '/events' },
-  { name: 'Testimonials', path: '/testimonials' },
   { name: 'Blog', path: '/blog' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -52,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav className={`backdrop-blur bg-white/80 ${scrolled ? 'bg-white/60 shadow-lg' : 'shadow'} sticky top-0 z-50 transition-all duration-300`}>
-      <div className="max-w-8xl mx-auto px-8 flex items-center justify-between h-18">
+      <div className="max-w-8xl mx-auto md:px-8 px-2 flex items-center justify-between h-18">
         
         <Link to="/" className="text-2xl font-bold text-primary">
         <img src="./images/transparentlogo.png" alt=""  className='size-24'/>
@@ -62,7 +59,7 @@ const Navbar = () => {
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <div className={`md:flex gap-4 items-center ${open ? 'block' : 'hidden'} absolute md:static left-0 top-16 w-full md:w-auto bg-white/95 md:bg-transparent shadow md:shadow-none p-4 md:p-0`}>
+        <div className={`md:flex lg:gap-4 items-center ${open ? 'block' : 'hidden'} absolute md:static left-0 top-16 w-full md:w-auto bg-white/95 md:bg-transparent shadow md:shadow-none p-4 md:p-0 md:gap-1`}>
           {navLinks.map(link =>
             link.dropdown ? (
               <div
@@ -90,7 +87,7 @@ const Navbar = () => {
                           className="flex flex-col items-center gap-1 p-2 rounded hover:bg-primary/10 transition cursor-pointer"
                           onClick={() => { setOpen(false); setDropdown(false); }}
                         >
-                          <img src={country.src} alt="" />
+                          <img src={country.src} alt="" className='size-8'/>
                           <span className="text-xs sm:text-sm text-secondary font-semibold text-center">{country.name}</span>
                         </Link>
                       ))}

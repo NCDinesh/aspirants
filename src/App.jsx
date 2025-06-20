@@ -8,10 +8,11 @@ import About from './pages/About';
 import StudyAbroad from './pages/StudyAbroad';
 import TestPreparation from './pages/TestPreparation';
 import Events from './pages/Events';
-import Testimonials from './pages/Testimonials';
+
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import StudyAbroadCountry from './pages/StudyAbroadCountry';
+import ServiceDetail from './pages/ServiceDetail';
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
             <Route path="/study-abroad/:country" element={<StudyAbroadCountry />} />
             <Route path="/test-preparation" element={<TestPreparation />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/service/:serviceName" element={<ServiceDetail />} />
           </Routes>
         </main>
         <Footer />
