@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const team = [
   { name: 'Suman Shrestha', role: 'Founder & CEO', img: 'https://randomuser.me/api/portraits/men/32.jpg' },
+  { name: 'Suman Shrestha', role: 'Founder & CEO', img: 'https://randomuser.me/api/portraits/men/32.jpg' },
   { name: 'Anita Gurung', role: 'Senior Counselor', img: 'https://randomuser.me/api/portraits/women/44.jpg' },
   { name: 'Ramesh Karki', role: 'Test Prep Head', img: 'https://randomuser.me/api/portraits/men/65.jpg' },
 ];
@@ -46,46 +47,51 @@ const About = () => {
   }, [location]);
 
   return (
-    <div className="max-w-5xl mx-auto py-12 px-4">
-      {/* Hero Image */}
-      <div className="w-full h-56 md:h-72 rounded-xl overflow-hidden mb-8">
-        <img
-          src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
-          alt="About Aspirants"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className="max-w-7xl mx-auto py-8 px-4">
 
-      {/* Mission & Vision */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div className="flex flex-col items-center text-center">
-          <FaBullseye className="text-4xl text-primary mb-2" />
-          <h3 className="text-xl font-bold text-primary mb-2">Our Mission</h3>
-          <p>
-            Empowering students with the knowledge, skills, and confidence to pursue global education opportunities and achieve their dreams.
-          </p>
+
+      <h2 class="text-3xl font-bold text-secondary mb-8 text-center">About Us</h2>
+
+      <div className='flex md:gap-16 gap-10 relative bg-gradient-to-br from-primary/10 to-secondary/10 p-8 max-w-7xl flex-col md:flex-row'>
+        {/* Hero Image */}
+        <div className="w-full h-56 md:h-80 rounded-xl overflow-hidden mb-8 flex justify-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3VyJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="About Aspirants"
+            className=" w-full h-full object-cover"
+          />
         </div>
-        <div className="flex flex-col items-center text-center">
-          <FaEye className="text-4xl text-secondary mb-2" />
-          <h3 className="text-xl font-bold text-secondary mb-2">Our Vision</h3>
-          <p>
-            To be Nepal's most trusted and innovative international education consultancy, guiding students to success worldwide.
-          </p>
+
+        {/* Mission & Vision */}
+        <div className="flex flex-col gap-4 mb-10">
+          <div className="flex flex-col items-center ">
+            <FaBullseye className="text-4xl text-primary mb-2" />
+            <h3 className="text-xl font-bold text-primary mb-2">Our Mission</h3>
+            <p>
+              Empowering students with the knowledge, skills, and confidence to pursue global education opportunities and achieve their dreams.
+            </p>
+          </div>
+          <div className="flex flex-col items-center ">
+            <FaEye className="text-4xl text-secondary mb-2" />
+            <h3 className="text-xl font-bold text-secondary mb-2">Our Vision</h3>
+            <p>
+              To be Nepal's most trusted and innovative international education consultancy, guiding students to success worldwide.
+            </p>
+          </div>
         </div>
+
       </div>
 
       {/* Team Section */}
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-center text-primary mb-6 flex items-center justify-center gap-2">
-          <FaUsers className="inline-block" /> Meet Our Team
-        </h3>
-        <div className="flex flex-wrap justify-center gap-8">
+        <h2 class="text-3xl font-bold text-secondary my-8 text-center">Meet our Team</h2>
+        <div className="flex flex-wrap justify-center gap-8 ">
           {team.map((member) => (
-            <div key={member.name} className="flex flex-col items-center bg-white rounded-xl shadow p-4 w-48">
+            <div key={member.name} className="flex flex-col items-center bg-gradient-to-br from-primary/10 to-secondary/10  p-4 w-56 rounded-xl shadow-lg hover:border-4 ">
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-24 h-24 rounded-full object-cover mb-2 border-4 border-primary"
+                className="w-24 h-24 rounded-full object-cover mb-2 border-4 border-secondary"
               />
               <div className="font-bold text-secondary text-lg">{member.name}</div>
               <div className="text-sm text-gray-500">{member.role}</div>
@@ -96,17 +102,17 @@ const About = () => {
 
       {/* Testimonials */}
       <div className="max-w-5xl mx-auto py-12 px-4" id="testimonial">
-        <h2 className="text-3xl font-bold text-primary mb-8 text-center">Student Testimonials</h2>
+        <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Student Testimonials</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center"
+              className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:border-4"
             >
               <img
                 src={t.img}
                 alt={t.name}
-                className="w-20 h-20 rounded-full object-cover mb-2 border-4 border-primary"
+                className="w-20 h-20 rounded-full object-cover mb-2 border-4 border-secondary"
               />
               <div className="font-bold text-secondary text-lg mb-1">{t.name}</div>
               <div className="flex gap-1 mb-2">

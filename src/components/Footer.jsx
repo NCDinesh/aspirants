@@ -36,7 +36,7 @@ const usefulDocs = [
 ];
 
 const Footer = () => (
-  <footer className="bg-gradient-to-br from-primary/90 to-secondary/90 text-white pt-12 pb-4 mt-16">
+  <footer className="bg-gradient-to-br from-primary/90 to-secondary/90 text-white pt-12 pb-4">
     <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
 
       {/* Left: Logo & Contact */}

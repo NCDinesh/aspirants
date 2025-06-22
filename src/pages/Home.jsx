@@ -93,7 +93,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-center px-4 sm:px-24 gap-8 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-center px-4 sm:px-24 gap-8 overflow-hidden mt-5">
         {/* Left: Headline & CTA */}
         <div className="flex-1 max-w-xl z-10 pr-6">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
@@ -133,23 +133,33 @@ const Home = () => {
       </section>
 
       {/* Study Abroad Grid */}
-      <section className="py-16 bg-white">
-        <h2 className="text-3xl font-bold text-center text-secondary mb-8">Explore The Most Preferred Country For Higher Education</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          {countries.map((country) => (
-            <div key={country.name} className="flex flex-col items-center bg-gray-50 rounded-lg shadow hover:shadow-lg p-4 transition">
-              <a href={country.path}>
-                <img src={country.flag} alt={country.name + ' flag'} className="max-sm:w-12 sm:h-8  md:w-24 md:h-16 object-cover rounded shadow mb-2" />
-                <span className="font-semibold text-secondary text-lg">{country.name}</span>
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
+ <section className="py-16 bg-white">
+  <h2 className="text-3xl font-bold text-center text-secondary mb-8">
+    Explore The Most Preferred Country For Higher Education
+  </h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+    {countries.map((country) => (
+      <div
+        key={country.name}
+        className="flex flex-col items-center justify-center bg-gray-50 rounded-lg shadow hover:shadow-lg p-4 transition h-28 sm:h-36"
+      >
+        <a href={country.path} className="flex flex-col items-center">
+          <img
+            src={country.flag}
+            alt={`${country.name} flag`}
+            className="w-20 h-14 sm:w-20 sm:h-16 object-fit rounded shadow mb-2"
+          />
+          <span className="font-semibold text-secondary text-lg text-center">{country.name}</span>
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Services Grid */}
       <section className="py-10 sm:py-16 bg-gray-100 px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-secondary mb-6 sm:mb-8">Our Services</h2>
+        <h2 class="text-3xl font-bold text-secondary mb-8 text-center">Our Services</h2>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto ">
           {services.map((service) => (
             <Link to={`/service/${service.slug}`} key={service.name}>

@@ -21,7 +21,7 @@ const navLinks = [
   { name: 'About Us', path: '/about' },
   { name: 'Study Abroad', path: '/study-abroad', dropdown: true },
   { name: 'Test Preparation', path: '/test-preparation' },
-  { name: 'Events', path: '/events' },
+
   { name: 'Blog', path: '/blog' },
   { name: 'Contact', path: '/contact' },
 ];
