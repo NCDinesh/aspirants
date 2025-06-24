@@ -140,18 +140,25 @@ const Home = () => {
   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
     {countries.map((country) => (
       <div
-        key={country.name}
-        className="flex flex-col items-center justify-center bg-gray-50 rounded-lg shadow hover:shadow-lg p-4 transition h-28 sm:h-36"
-      >
-        <a href={country.path} className="flex flex-col items-center">
-          <img
-            src={country.flag}
-            alt={`${country.name} flag`}
-            className="w-20 h-14 sm:w-20 sm:h-16 object-fit rounded shadow mb-2"
-          />
-          <span className="font-semibold text-secondary text-lg text-center">{country.name}</span>
-        </a>
-      </div>
+  key={country.name}
+  className="group relative flex flex-col items-center justify-center bg-gray-50 rounded-lg shadow hover:shadow-lg p-4 transition h-28 sm:h-36 overflow-hidden"
+>
+  {/* Sliding Gradient Background */}
+  <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0"></div>
+
+  {/* Content Layer */}
+  <a href={country.path} className="relative z-10 flex flex-col items-center">
+    <img
+      src={country.flag}
+      alt={`${country.name} flag`}
+      className="w-20 h-14 sm:w-20 sm:h-16 object-contain rounded shadow mb-2  transition-colors duration-300"
+    />
+    <span className="font-semibold text-secondary text-lg text-center group-hover:text-white transition-colors duration-300">
+      {country.name}
+    </span>
+  </a>
+</div>
+
     ))}
   </div>
 </section>
