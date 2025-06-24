@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { FaBookOpen, FaUserGraduate, FaChalkboardTeacher, FaPlaneDeparture, FaQuoteLeft } from 'react-icons/fa';
 
 const countries = [
@@ -84,12 +85,24 @@ const heroServices = [
     text: 'text-secondary',
     highlight: 'text-secondary',
     style: '-bottom-8 left-1/2 -translate-x-1/2 translate-y-1/2',
-    to: '/study-abroad',
+    to: '/#studyabroad',
   },
 ];
 
 const Home = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const id = location.hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
+    
   return (
     <div>
       {/* Hero Section */}
@@ -133,7 +146,7 @@ const Home = () => {
       </section>
 
       {/* Study Abroad Grid */}
- <section className="py-16 bg-white">
+ <section className="py-16 bg-white" id='studyabroad'>
   <h2 className="text-3xl font-bold text-center text-secondary mb-8">
     Explore The Most Preferred Country For Higher Education
   </h2>

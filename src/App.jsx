@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import StudyAbroad from './pages/StudyAbroad';
 import TestPreparation from './pages/TestPreparation';
 import Events from './pages/Events';
 
@@ -24,7 +23,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/study-abroad" element={<StudyAbroad />} />
             <Route path="/study-abroad/:country" element={<StudyAbroadCountry />} />
             <Route path="/test-preparation" element={<TestPreparation />} />
             <Route path="/events" element={<Events />} />
