@@ -106,7 +106,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-center px-4 sm:px-24 gap-8 overflow-hidden mt-5">
+      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/10 py-12 md:py-20 flex flex-col md:flex-row items-center justify-center px-4 sm:px-24 gap-8 overflow-hidden">
         {/* Left: Headline & CTA */}
         <div className="flex-1 max-w-xl z-10 pr-6">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
@@ -178,8 +178,8 @@ const Home = () => {
 
 
       {/* Services Grid */}
-      <section className="py-10 sm:py-16 bg-gray-100 px-4">
-        <h2 class="text-3xl font-bold text-secondary mb-8 text-center">Our Services</h2>
+      <section className="py-10 sm:py-16 bg-gray-100 px-4" id='ourservices'>
+        <h2 class="text-3xl font-bold text-secondary mb-8 text-center" >Our Services</h2>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto ">
           {services.map((service) => (
             <Link to={`/service/${service.slug}`} key={service.name}>

@@ -7,11 +7,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import TestPreparation from './pages/TestPreparation';
 import Events from './pages/Events';
-
+import IELTS from './pages/IELTS';
+import PTE from './pages/PTE';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import StudyAbroadCountry from './pages/StudyAbroadCountry';
 import ServiceDetail from './pages/ServiceDetail';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Topbar />
         <Navbar />
         <main className="flex-1">
+          <ScrollToTop></ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -29,6 +32,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service/:serviceName" element={<ServiceDetail />} />
+            <Route path="/test-preparation/ielts" element={<IELTS />} />
+            <Route path="/test-preparation/pte" element={<PTE />} />
           </Routes>
         </main>
         <Footer />

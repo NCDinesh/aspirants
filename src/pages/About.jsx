@@ -7,7 +7,8 @@ import { useLocation } from 'react-router-dom';
 const team = [
   { name: 'Madan Raj Joshi', role: 'Founder/CEO', img: '/images/Team/CEO.png', contact: '+977 9840502886' },
   { name: 'Ashok Upadhyaya', role: 'Business Development Manager/ Counselor ', img: '/images/Team/CEO.png', contact: '+977 9865843990' },
-  { name: 'Dashrath Singh ', role: 'Managing Director/ Counselor', img: '/images/Team/CEO.png', contact: '+977 9865365009' },
+  { name: 'Dashrath Singh ', role: 'Managing Director/ Counselor', img: '/images/Team/MD.JPG', contact: '+977 9865365009' },
+  { name: 'Anil Bhandari', role: 'Uk/ Department Manager/counselor', img: '/images/Team/MD.JPG' },
   { name: 'Sher Singh Dhami', role: 'Admission Officer ', img: '/images/Team/CEO.png', contact: '+977 9702657574' },
   { name: 'Aaradhya Bhatta', role: 'Administrative Assistant ', img: '/images/Team/CEO.png', contact: '+977 9818235355' },
 ];

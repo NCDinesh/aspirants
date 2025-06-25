@@ -2,13 +2,14 @@ import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedin, FaUser } from 'react-icons/fa';
 
 const Contact = () => (
-  <div className="max-w-4xl mx-auto py-12 px-4">
+  <div className="max-w-7xl mx-auto py-12 px-4">
+    <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Contact Us</h2>
     {/* Hero Image */}
-    <div className="w-full h-56 md:h-72 rounded-xl overflow-hidden mb-8">
-      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Contact" className="w-full h-full object-cover" />
+    <div className="w-full h-56 md:h-72 rounded-xl overflow-hidden mb-8 max-w-4xl text-center mx-auto">
+      <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" alt="Contact" className="w-full h-full object-cover" />
     </div>
-    <h2 className="text-3xl font-bold text-primary mb-8 text-center">Contact Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
       {/* Contact Form */}
       <form className="bg-white rounded-xl shadow p-8 grid gap-4">
         <div className="flex items-center gap-2 border-b pb-2"><FaUser className="text-secondary" /><input type="text" placeholder="Your Name" className="p-2 w-full focus:outline-none" required /></div>
@@ -18,7 +19,7 @@ const Contact = () => (
         <button type="submit" className="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-secondary transition mt-2">Send Message</button>
       </form>
       {/* Info & Map */}
-      <div className="flex flex-col gap-6 justify-between">
+      <div className="flex flex-col justify-between">
         <div>
           <div className="flex items-center gap-2 mb-2"><FaPhone className="text-primary" /> <span>+977 4531221, 01 4516197</span></div>
           <div className="flex items-center gap-2 mb-2"><FaEnvelope className="text-primary" /> <span>info@aspirants.edu.np</span></div>
@@ -29,7 +30,7 @@ const Contact = () => (
           <a href="#" className="text-primary hover:text-secondary"><FaInstagram /></a>
           <a href="#" className="text-primary hover:text-secondary"><FaLinkedin /></a>
         </div>
-        <div className="w-full h-40 rounded-lg overflow-hidden mt-4">
+        <div className="w-full h-[245px] rounded-lg overflow-hidden mt-4">
           {/* Google Maps Embed */}
           <iframe
             title="Google Map"

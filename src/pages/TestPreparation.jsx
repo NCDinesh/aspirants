@@ -5,16 +5,16 @@ const tests = [
   {
     name: 'IELTS',
     description: 'Comprehensive IELTS preparation classes with expert instructors and resources to help you achieve your desired band score.',
-    img: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80',
+    img: 'https://images.unsplash.com/photo-1660927059794-152d06e11016?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWVsdHN8ZW58MHx8MHx8fDA%3D',
     icon: <FaBook className="text-3xl text-primary" />,
-    link: '/test-preparation/ielts'
+    link: '/test-preparation/IELTS'
   },
   {
     name: 'PTE',
     description: 'Personalized PTE coaching and practice materials to boost your English proficiency for study abroad.',
-    img: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80',
+    img: 'https://i.pinimg.com/736x/de/26/08/de26083f8b105358295437a93a1221cc.jpg',
     icon: <FaChalkboardTeacher className="text-3xl text-secondary" />,
-    link: '/test-preparation/pte'
+    link: '/test-preparation/PTE'
   },
 ];
 
@@ -56,12 +56,12 @@ const TestPreparation = () => (
       </div>
 
     </div>
-    s
+
     <h2 class="text-3xl font-bold text-secondary  text-center">What we offer</h2>
 
 
     {/* Test Preparation Cards */}
-<div className="flex flex-col md:flex-row flex-wrap justify-center gap-8">
+<div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 items-center">
   {tests.map((test) => (
     <div key={test.name} className="group bg-white w-[400px] rounded-xl shadow-lg p-6 flex flex-col items-center text-center overflow-hidden relative transition hover:scale-105">
 
@@ -69,7 +69,7 @@ const TestPreparation = () => (
       <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0 rounded-xl"></div>
 
       {/* Card Content */}
-      <div className="relative z-10 flex flex-col items-center bg-gradient-to-br from-primary/10 to-secondary/10">
+      <div className="relative z-10 flex flex-col items-center ">
         <div className='bg-white rounded-full size-10 flex justify-center items-center'>
         {test.icon}
         </div>
