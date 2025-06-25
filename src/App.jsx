@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import StudyAbroadCountry from './pages/StudyAbroadCountry';
 import ServiceDetail from './pages/ServiceDetail';
 import ScrollToTop from './components/ScrollToTop';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/service/:serviceName" element={<ServiceDetail />} />
             <Route path="/test-preparation/ielts" element={<IELTS />} />
             <Route path="/test-preparation/pte" element={<PTE />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />
