@@ -32,13 +32,13 @@ const usefulDocs = [
 ];
 
 const Footer = () => (
-<footer className="bg-gradient-to-br from-primary/90 to-secondary/90 text-white pt-12 pb-4">
-    
+  <footer className="bg-gradient-to-br from-primary/90 to-secondary/90 text-white pt-12 pb-4">
+
     <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[2fr_1.5fr_1fr] gap-8">
 
       {/* Left: Logo & Contact */}
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="flex gap-4 items-center">
           <img src="/images/logo.png" alt="Aspirants Logo" className="w-28 mb-2" />
           <div className="flex flex-col gap-3 text-sm">
             <p className="flex items-center gap-2"><FaPhoneAlt /> +977 9811111111, 01-5971526</p>
@@ -46,7 +46,7 @@ const Footer = () => (
             <p className="flex items-center gap-2"><FaMapMarkerAlt /> Aspirants Avenue, Putalisadak, Kathmandu, Nepal</p>
           </div>
         </div>
-               <div className="flex gap-3 mt-2 text-2xl">
+        <div className="flex gap-3 mt-2 text-2xl">
           <a href="#" className="hover:text-secondary text-white" aria-label="Facebook"><FaFacebookF /></a>
           <a href="#" className="hover:text-secondary  text-white" aria-label="Instagram"><FaInstagram /></a>
           <a href="#" className="hover:text-secondary  text-white" aria-label="X"><TbBrandX /></a>
