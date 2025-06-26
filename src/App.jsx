@@ -15,13 +15,40 @@ import StudyAbroadCountry from './pages/StudyAbroadCountry';
 import ServiceDetail from './pages/ServiceDetail';
 import ScrollToTop from './components/ScrollToTop';
 import BlogPost from './pages/BlogPost';
+import { useEffect, useState} from 'react';
 
 function App() {
+const [showMessage, setShowMessage] = useState(false);
+
+//  useEffect(() => {
+//     const handleContextMenu = (e) => {
+//       e.preventDefault();
+//       setShowMessage(true);
+
+//       // Hide message after 2 seconds
+//       setTimeout(() => {
+//         setShowMessage(false);
+//       }, 2000);
+//     };
+
+//     document.addEventListener("contextmenu", handleContextMenu);
+//     return () => {
+//       document.removeEventListener("contextmenu", handleContextMenu);
+//     };
+//   }, []);
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Topbar />
         <Navbar />
+{/* 
+        {showMessage && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white text-black text-lg px-6 py-3 rounded-xl shadow-lg">
+            🚫 Right-click is disabled
+          </div>
+        </div>
+      )} */}
         <main className="flex-1">
           <ScrollToTop></ScrollToTop>
           <Routes>

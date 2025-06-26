@@ -42,9 +42,9 @@ const IELTS = () => (
 
       </div>
     </div>
-
+  
     {/* Additional Section */}
-    <div className="bg-gray-50 rounded-xl p-8 flex flex-col gap-6 text-center md:text-left max-w-5xl">
+    <div className="bg-gray-50 rounded-xl p-8 flex flex-col gap-2 text-center md:text-left max-w-5xl">
       <h3 className="text-2xl font-bold text-primary">Who Should Take This Course?</h3>
       <p>
         Whether you are a student planning to study abroad, a professional looking for migration, or an individual needing English language certification, our IELTS course prepares you to achieve your goals effectively.

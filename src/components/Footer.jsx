@@ -14,7 +14,6 @@ import { TbBrandX } from 'react-icons/tb'; // Modern X (Twitter) icon
 const quickLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
-  { name: 'Our Services', path: '/#ourservices' },
   { name: 'Test Preparation', path: '/test-preparation' },
   { name: 'IELTS', path: '/test-preparation/IELTS' },
   { name: 'PTE', path: '//test-preparation/IELTS' },
@@ -41,9 +40,9 @@ const Footer = () => (
         <div className="flex gap-4 items-center">
           <img src="/images/logo.png" alt="Aspirants Logo" className="w-28 mb-2" />
           <div className="flex flex-col gap-3 text-sm">
-            <p className="flex items-center gap-2"><FaPhoneAlt /> +977 9811111111, 01-5971526</p>
+            <p className="flex items-center gap-2"><FaPhoneAlt /> +977 9840502886, +977 9865365009</p>
             <p className="flex items-center gap-2"><FaEnvelope /> info@aspirants.edu.np</p>
-            <p className="flex items-center gap-2"><FaMapMarkerAlt /> Aspirants Avenue, Putalisadak, Kathmandu, Nepal</p>
+            <p className="flex items-center gap-2"><FaMapMarkerAlt /> Lakhechaur Marg-10 , Thapagaoun, New Baneshwor</p>
           </div>
         </div>
         <div className="flex gap-3 mt-2 text-2xl">

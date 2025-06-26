@@ -44,7 +44,7 @@ const PTE = () => (
     </div>
 
     {/* Additional Section */}
-    <div className="bg-gray-50 rounded-xl p-8 flex flex-col gap-6 text-center md:text-left max-w-5xl">
+    <div className="bg-gray-50 rounded-xl p-8 flex flex-col gap-2 text-center md:text-left max-w-5xl">
       <h3 className="text-2xl font-bold text-primary">Who Benefits From Our PTE Training?</h3>
       <p>
         If you're planning to apply for overseas education, migration, or work opportunities where English proficiency is required, our PTE coaching is the ideal solution to help you succeed.

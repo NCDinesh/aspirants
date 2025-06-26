@@ -38,7 +38,7 @@ const BlogPost = () => {
           <img
             src={meta.img}
             alt={meta.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
       )}
