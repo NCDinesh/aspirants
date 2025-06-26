@@ -57,7 +57,7 @@ const heroServices = [
     color: 'bg-white',
     text: 'text-sky-700',
     highlight: 'text-sky-700',
-    style: 'top-1/2 left-0 -translate-y-1/2 -translate-x-1/4',
+    style: 'top-1/2 -left-6 -translate-y-1/2 -translate-x-1/4',
     to: '/about#testimonial',
   },
   {
@@ -75,7 +75,7 @@ const heroServices = [
     color: 'bg-white',
     text: 'text-gray-700',
     highlight: 'text-gray-700',
-    style: 'top-1/2 right-0 -translate-y-1/2 translate-x-1/4',
+    style: 'top-1/2 -right-6 -translate-y-1/2 translate-x-1/4',
     to: '/test-preparation',
   },
   {
@@ -85,7 +85,7 @@ const heroServices = [
     text: 'text-secondary',
     highlight: 'text-secondary',
     style: '-bottom-8 left-1/2 -translate-x-1/2 translate-y-1/2',
-    to: '/#studyabroad',
+    to: '/study-abroad',
   },
 ];
 
@@ -122,9 +122,9 @@ const Home = () => {
         {/* Right: Student Image & Floating Cards */}
         <div className="flex-1 flex items-center justify-center relative min-h-[340px] md:min-h-[420px]">
           {/* Circular BG */}
-          <div className="absolute rounded-full bg-[#74ac94] w-64 h-64 md:w-96 md:h-96 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute rounded-full bg-gradient-to-br from-primary/90 to-secondary/90 w-64 h-64 md:w-96 md:h-96 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           {/* Student Image */}
-          <img src="./images/hero.png" alt="Student" className="relative z-10 w-40 md:w-60 rounded-full shadow-lg object-cover" />
+          <img src="./images/hero.png" alt="Student" className="relative z-10 w-40 md:w-60 rounded-full shadow-lg object-cover  " />
           {/* Floating Service Cards at border */}
           {heroServices.map((service) => (
             <button
