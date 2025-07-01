@@ -5,6 +5,7 @@ const countryData = {
   australia: {
     name: 'Australia',
     flag: '🇦🇺',
+    flagImg: 'https://flagcdn.com/w80/au.png',
     description: 'Australia is a top destination for international students, known for its world-class universities, vibrant cities, and beautiful landscapes. Studying in Australia offers a multicultural environment and excellent post-study work opportunities.',
     highlights: [
       'Post-study work visa opportunities',
@@ -17,7 +18,8 @@ const countryData = {
   usa: {
     name: 'USA',
     flag: '🇺🇸',
-    description: 'The USA is renowned for its diverse range of universities and programs, cutting-edge research, and global networking opportunities. It is a popular choice for students seeking academic excellence and career advancement.',
+    flagImg: 'https://flagcdn.com/w80/us.png',
+    description: 'The USA is renowned for its diverse range of universities and programs, cutting-edge research, and global networking opportunities.',
     highlights: [
       'World-class universities and research facilities',
       'STEM OPT extension for tech students',
@@ -29,31 +31,34 @@ const countryData = {
   'new-zealand': {
     name: 'New Zealand',
     flag: '🇳🇿',
-    description: 'New Zealand offers high-quality education, a safe and welcoming environment, and stunning natural beauty. It is ideal for students looking for a balanced lifestyle and innovative learning.',
+    flagImg: 'https://flagcdn.com/w80/nz.png',
+    description: 'New Zealand offers high-quality education, a safe and welcoming environment, and stunning natural beauty.',
     highlights: [
       'Innovative education system',
       'Safe, peaceful living conditions',
       'Work part-time during study',
       'Beautiful landscapes and outdoor lifestyle',
     ],
-    img: 'https://images.unsplash.com/photo-1729048563795-b001db99209f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmV3emVhbGFuZHxlbnwwfHwwfHx8MA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1729048563795-b001db99209f?w=600&auto=format&fit=crop&q=60',
   },
   canada: {
     name: 'Canada',
     flag: '🇨🇦',
-    description: 'Canada is known for its inclusive society, excellent education system, and opportunities for permanent residency. It is a favorite among students for its quality of life and academic reputation.',
+    flagImg: 'https://flagcdn.com/w80/ca.png',
+    description: 'Canada is known for its inclusive society, excellent education system, and opportunities for permanent residency.',
     highlights: [
       'Affordable tuition and living costs',
       'Post-graduation work permit (PGWP)',
       'Pathway to PR through education',
       'High safety standards and cultural diversity',
     ],
-    img: 'https://images.unsplash.com/photo-1530025809667-1f4bcff8e60f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FuYWRhfGVufDB8fDB8fHww',
+    img: 'https://images.unsplash.com/photo-1530025809667-1f4bcff8e60f?w=600&auto=format&fit=crop&q=60',
   },
   uk: {
     name: 'UK',
     flag: '🇬🇧',
-    description: 'The UK boasts some of the world\'s oldest and most prestigious universities. It offers a rich cultural experience, diverse programs, and strong global recognition for its degrees.',
+    flagImg: 'https://flagcdn.com/w80/gb.png',
+    description: 'The UK boasts some of the world\'s oldest and most prestigious universities.',
     highlights: [
       'Shorter course duration (3-year undergrad, 1-year master\'s)',
       'Globally recognized qualifications',
@@ -65,19 +70,21 @@ const countryData = {
   denmark: {
     name: 'Denmark',
     flag: '🇩🇰',
-    description: 'Denmark is known for its innovative teaching methods, high standard of living, and focus on sustainability. It is a great choice for students interested in research and creativity.',
+    flagImg: 'https://flagcdn.com/w80/dk.png',
+    description: 'Denmark is known for its innovative teaching methods, high standard of living, and focus on sustainability.',
     highlights: [
       'Tuition-free for EU students, scholarships for others',
       'Project-based and practical education',
       'Focus on sustainability and design thinking',
       'Excellent public services and transport',
     ],
-    img: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGVubWFya3xlbnwwfHwwfHx8MA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=600&auto=format&fit=crop&q=60',
   },
   japan: {
     name: 'Japan',
     flag: '🇯🇵',
-    description: 'Japan combines tradition and innovation, offering unique educational experiences and advanced technology. It is ideal for students interested in culture, science, and technology.',
+    flagImg: 'https://flagcdn.com/w80/jp.png',
+    description: 'Japan combines tradition and innovation, offering unique educational experiences and advanced technology.',
     highlights: [
       'Cutting-edge research and tech',
       'Strong government-funded scholarships',
@@ -89,7 +96,8 @@ const countryData = {
   'south-korea': {
     name: 'South Korea',
     flag: '🇰🇷',
-    description: 'South Korea is a leader in technology and education, with a vibrant culture and modern cities. It is perfect for students looking for high-quality education and exciting urban life.',
+    flagImg: 'https://flagcdn.com/w80/kr.png',
+    description: 'South Korea is a leader in technology and education, with a vibrant culture and modern cities.',
     highlights: [
       'Affordable tuition and living expenses',
       'Strong scholarship opportunities',
@@ -101,14 +109,15 @@ const countryData = {
   germany: {
     name: 'Germany',
     flag: '🇩🇪',
-    description: 'Germany is famous for its tuition-free or low-cost education, strong engineering and science programs, and rich history. It attracts students from all over the world.',
+    flagImg: 'https://flagcdn.com/w80/de.png',
+    description: 'Germany is famous for its tuition-free or low-cost education, strong engineering and science programs, and rich history.',
     highlights: [
       'No tuition fees in public universities',
       'Strong focus on engineering, tech, and research',
       'Opportunities to learn German and work during study',
       'Robust industry-academia linkage',
     ],
-    img: 'https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2VybWFueXxlbnwwfHwwfHx8MA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?w=600&auto=format&fit=crop&q=60',
   },
 };
 
@@ -127,20 +136,32 @@ const StudyAbroadCountry = () => {
   return (
     <div>
       {/* Hero Section */}
-<section className="relative bg-gray-100 px-4 py-6">
-  <div
-    className="relative h-[50vh] bg-cover bg-center max-w-5xl mx-auto  rounded-lg overflow-hidden"
-    style={{ backgroundImage: `url(${data.img})` }}
-  >
-    <div className="absolute inset-0 bg-black/50" />
-    <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-      <div className="text-6xl">{data.flag}</div>
-      <h1 className="text-4xl md:text-5xl font-bold mt-2">
-        Study in {data.name}
-      </h1>
-    </div>
-  </div>
-</section>
+      <section className="relative bg-gray-100 px-4 py-6">
+        <div
+          className="relative h-[50vh] bg-cover bg-center max-w-5xl mx-auto rounded-lg overflow-hidden"
+          style={{ backgroundImage: `url(${data.img})` }}
+        >
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+
+            {/* Emoji flag for mobile */}
+            <div className="text-6xl md:hidden">
+              {data.flag}
+            </div>
+
+            {/* Image flag for desktop */}
+            <img
+              src={data.flagImg}
+              alt={`${data.name} flag`}
+              className="w-16 h-16 object-contain hidden md:block mb-4"
+            />
+
+            <h1 className="text-4xl md:text-5xl font-bold mt-2">
+              Study in {data.name}
+            </h1>
+          </div>
+        </div>
+      </section>
 
       {/* Description Section */}
       <section className="max-w-4xl mx-auto py-12 px-4">
@@ -157,11 +178,11 @@ const StudyAbroadCountry = () => {
           </div>
         )}
 
-        {/* Aspirants CTA */}
+        {/* CTA Section */}
         <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-lg shadow">
           <h2 className="text-xl font-bold text-primary mb-2">Aspirants Education Consultancy Pvt. Ltd. is here to help!</h2>
           <p className="text-secondary">
-            Planning to study in <strong>{data.name}</strong>? Our team at <strong>Aspirants</strong> is ready to guide you through every step — from counseling, documentation, university application, to visa processing and pre-departure orientation. 
+            Planning to study in <strong>{data.name}</strong>? Our team at <strong>Aspirants</strong> is ready to guide you through every step — from counseling, documentation, university application, to visa processing and pre-departure orientation.
           </p>
           <p className="mt-3 text-secondary">
             Let us help you turn your dream of studying in {data.name} into reality.
