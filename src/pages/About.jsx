@@ -6,11 +6,11 @@ import { useLocation } from 'react-router-dom';
 
 const team = [
   { name: 'Madan Raj Joshi', role: 'Founder/CEO', img: '/images/Team/CEO.png', contact: '+977 9840502886' },
-  { name: 'Ashok Upadhyaya', role: 'Business Development Manager/ Counselor ', img: '/images/Team/CEO.png', contact: '+977 9865843990' },
+  { name: 'Ashok Upadhyaya', role: 'Business Development Manager/ Counselor ', img: '/images/Team/BDM.JPG', contact: '+977 9865843990' },
   { name: 'Dashrath Singh ', role: 'Managing Director/ Counselor', img: '/images/Team/MD.JPG', contact: '+977 9865365009' },
   { name: 'Anil Bhandari', role: 'Uk/ Department Manager/counselor', img: '/images/Team/MD.JPG' },
   { name: 'Sher Singh Dhami', role: 'Admission Officer ', img: '/images/Team/CEO.png', contact: '+977 9702657574' },
-  { name: 'Aaradhya Bhatta', role: 'Administrative Assistant ', img: '/images/Team/CEO.png', contact: '+977 9818235355' },
+  { name: 'Aaradhya Bhatta', role: 'Administrative Assistant ', img: '/images/Team/AA.JPG', contact: '+977 9818235355' },
 ];
 
 const testimonials = [
@@ -99,7 +99,7 @@ const About = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-28 h-28 rounded-full object-contain mb-2 border-4 border-secondary group-hover:border-white transition-colors duration-300"
+                  className="w-28 h-28 rounded-full object-cover mb-2 border-4 border-secondary group-hover:border-white transition-colors duration-300"
                 />
                 <div className="font-bold text-secondary text-lg group-hover:text-white transition-colors duration-300">{member.name}</div>
                 <div className="text-sm text-gray-500 font-bold group-hover:text-white transition-colors duration-300">{member.role}</div>

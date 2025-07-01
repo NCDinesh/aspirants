@@ -66,7 +66,7 @@ const heroServices = [
     color: 'bg-white',
     text: 'text-orange-700',
     highlight: 'text-orange-700',
-    style: '-top-8 left-1/2 -translate-x-1/2 -translate-y-1/2',
+    style: 'top-0 left-1/2 -translate-x-1/2 -translate-y-1/2',
     to: '/about',
   },
   {
@@ -84,7 +84,7 @@ const heroServices = [
     color: 'bg-white',
     text: 'text-secondary',
     highlight: 'text-secondary',
-    style: '-bottom-8 left-1/2 -translate-x-1/2 translate-y-1/2',
+    style: 'bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2',
     to: '/study-abroad',
   },
 ];
@@ -129,7 +129,7 @@ const Home = () => {
           {heroServices.map((service) => (
             <button
               key={service.label}
-              className={`absolute ${service.style} z-20 shadow-lg rounded-xl px-4 py-4 flex items-center gap-2 ${service.color} ${service.text} bg-opacity-90 backdrop-blur border border-gray-100 hover:scale-105 transition-transform hidden lg:flex`}
+              className={`absolute ${service.style} z-20 shadow-lg rounded-xl px-4 py-4 flex items-center gap-2 ${service.color} ${service.text} bg-opacity-90 backdrop-blur  border-gray-200 border-2 hover:scale-105 transition-transform hidden lg:flex`}
               style={{ minWidth: '170px' }}
               onClick={() => navigate(service.to)}
               type="button"

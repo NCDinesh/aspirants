@@ -16,7 +16,7 @@ const quickLinks = [
   { name: 'About Us', path: '/about' },
   { name: 'Test Preparation', path: '/test-preparation' },
   { name: 'IELTS', path: '/test-preparation/IELTS' },
-  { name: 'PTE', path: '//test-preparation/IELTS' },
+  { name: 'PTE', path: '/test-preparation/PTE' },
   { name: 'Contact', path: '/contact' },
   { name: 'Blog', path: '/blog' },
   { name: 'Testimonials & Reviews', path: '/about#testimonial' },
