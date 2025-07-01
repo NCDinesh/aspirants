@@ -88,27 +88,35 @@ const About = () => {
       <div className="mb-8">
         <h2 class="text-3xl font-bold text-secondary my-8 text-center">Meet our Team</h2>
         <div className="flex flex-wrap justify-center gap-10 ">
-          {team.map((member) => (
-            <div key={member.name} className="group relative flex flex-col items-center bg-gradient-to-br from-primary/10 to-secondary/10 p-4 w-[350px] h-[300px] rounded-xl shadow-lg hover:border-4 justify-center overflow-hidden">
+   {team.map((member, index) => (
+  <div key={member.name} className="group relative flex flex-col items-center bg-gradient-to-br from-primary/10 to-secondary/10 p-4 w-[350px] h-[300px] rounded-xl shadow-lg hover:border-4 justify-center overflow-hidden">
 
-              {/* Sliding gradient background */}
-              <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0"></div>
+    {/* Sliding gradient background */}
+    <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0"></div>
 
-              {/* Content on top */}
-              <div className="relative z-10 flex flex-col items-center justify-center">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-28 h-28 rounded-full object-cover mb-2 border-4 border-secondary group-hover:border-white transition-colors duration-300"
-                />
-                <div className="font-bold text-secondary text-lg group-hover:text-white transition-colors duration-300">{member.name}</div>
-                <div className="text-sm text-gray-500 font-bold group-hover:text-white transition-colors duration-300">{member.role}</div>
-                <div className="text-sm text-gray-500 group-hover:text-white transition-colors duration-300">{member.contact}</div>
-              </div>
+    {/* Content on top */}
+    <div className="relative z-10 flex flex-col items-center justify-center">
+      <img
+        src={member.img}
+        alt={member.name}
+        className={`w-28 h-28 rounded-full mb-2 border-4 border-secondary group-hover:border-white transition-colors duration-300 ${
+          (index === 2 || index === 3) ? 'object-contain' : 'object-cover'
+        }`}
+      />
+      <div className="font-bold text-secondary text-lg group-hover:text-white transition-colors duration-300">
+        {member.name}
+      </div>
+      <div className="text-sm text-gray-500 font-bold group-hover:text-white transition-colors duration-300">
+        {member.role}
+      </div>
+      <div className="text-sm text-gray-500 group-hover:text-white transition-colors duration-300">
+        {member.contact}
+      </div>
+    </div>
 
-            </div>
+  </div>
+))}
 
-          ))}
         </div>
       </div>
 
