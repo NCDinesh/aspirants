@@ -67,7 +67,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-primary">
-          <img src="./images/transparentlogo.png" alt="Logo" className="size-24" />
+          <img src="/images/transparentlogo.png" alt="Logo" className="size-24" />
         </Link>
 
         {/* Mobile Menu Button */}
