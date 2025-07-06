@@ -7,39 +7,6 @@ import StudyAbroad from './StudyAbroad';
 
 
 
-const services = [
-  {
-    name: 'Pre-departure Orientation',
-    img: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80',
-    slug: 'pre-departure-orientation',
-  },
-  {
-    name: 'Test Preparation',
-    img: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80',
-    slug: 'test-preparation',
-  },
-  {
-    name: 'Student Accommodation',
-    img: 'https://plus.unsplash.com/premium_photo-1724061887314-347affe7df0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnQlMjBhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
-    slug: 'student-accommodation',
-  },
-  {
-    name: 'Education Counseling',
-    img: 'https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9uJTIwY291bnNlbGxpbmd8ZW58MHx8MHx8fDA%3D',
-    slug: 'education-counseling',
-  },
-  {
-    name: 'Scholarship Guidance',
-    img: 'https://media.istockphoto.com/id/667305600/photo/young-man-filling-scholarship-application-form-on-internet.webp?a=1&b=1&s=612x612&w=0&k=20&c=XJE_cVpCLlkRaSSy1IUGzBzoAETVAIuG4rVf5L7NnrI=',
-    slug: 'scholarship-guidance',
-  },
-  {
-    name: 'University Admission',
-    img: 'https://plus.unsplash.com/premium_photo-1682974407089-235ad9922288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXZlcnNpdGllc3xlbnwwfHwwfHx8MA%3D%3D',
-    slug: 'university-admission',
-  },
-];
-
 
 const heroServices = [
   {
@@ -176,7 +143,7 @@ const Home = () => {
 <UniversityLogoSlider> </UniversityLogoSlider>
 </section>
 
-      {/* Services Grid */}
+      {/* Services Grid
       <section className="py-10 sm:py-16 bg-gray-100 px-4" id='ourservices'>
         <h2 class="text-3xl font-bold text-secondary mb-8 text-center" >Our Services</h2>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto ">
@@ -193,7 +160,8 @@ const Home = () => {
 
           ))}
         </div>
-      </section>
+      </section> */}
+
     </div>
   );
 };

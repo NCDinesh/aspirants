@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import BlogPost from './pages/BlogPost';
 import { useEffect, useState} from 'react';
 import NotFound from './pages/Notfound';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
 const [showMessage, setShowMessage] = useState(false);
@@ -63,6 +64,7 @@ const [showMessage, setShowMessage] = useState(false);
             <Route path="/service/:serviceName" element={<ServiceDetail />} />
             <Route path="/test-preparation/ielts" element={<IELTS />} />
             <Route path="/test-preparation/pte" element={<PTE />} />
+            <Route path="/services" element={<ServicesPage></ServicesPage>} />
             <Route path="*" element={<NotFound></NotFound>}></Route>
         {/* <Route path="/blog/:slug" element={<BlogPost />} /> */}
           </Routes>

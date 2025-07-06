@@ -47,11 +47,17 @@ const UniversityLogoSlider = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
+
+                  <h2 className="text-3xl font-bold text-secondary mb-8 text-center flex items-center justify-center gap-2">
+        Universities we offer
+      </h2>
       <div
         ref={containerRef}
         className="flex"
         style={{ willChange: 'transform', display: 'flex' }}
       >
+
+
         {logos.concat(logos).map((logo, index) => (
           <div
             key={index}

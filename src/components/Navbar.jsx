@@ -14,6 +14,8 @@ const countries = [
 const studyabroaddropdown = [
   { name: "Top Destinations", path: '/#Topdestination' },
   { name: "Test Preparation", path: '/test-preparation' },
+  { name: "Services", path: '/services' },
+
 ]
 
 const navLinks = [
