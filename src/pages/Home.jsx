@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { FaBookOpen, FaUserGraduate, FaChalkboardTeacher, FaPlaneDeparture, FaQuoteLeft } from 'react-icons/fa';
 import UniversityLogoSlider from '../components/UniversityLogoSlider';
 import StudyAbroad from './StudyAbroad';
+import Accordion from '../components/FAQ';
 
 
 
@@ -61,6 +62,30 @@ const Home = () => {
       }
     }, [location]);
     
+
+    const faqs = [
+  {
+    question: 'What services does your consultancy offer?',
+    answer: 'We offer comprehensive services including education counseling, test preparation, scholarship guidance, university admission assistance, student accommodation, and pre-departure orientation.',
+  },
+  {
+    question: 'Do you help with scholarship applications?',
+    answer: 'Yes, our scholarship guidance service assists students in identifying scholarship opportunities and completing applications effectively.',
+  },
+  {
+    question: 'Can you help me find accommodation abroad?',
+    answer: 'Absolutely! We help students find safe, affordable, and comfortable accommodation near their university or college abroad.',
+  },
+  {
+    question: 'What test preparation programs do you provide?',
+    answer: 'We offer expert-led preparation for international tests such as IELTS, PTE, and other language proficiency and admission exams.',
+  },
+  {
+    question: 'How does the university admission process work?',
+    answer: 'Our consultants assist with every step, from selecting the right university to preparing applications, documentation, and guiding you through the admission process.',
+  },
+];
+
   return (
     <div>
       {/* Hero Section */}
@@ -161,6 +186,10 @@ const Home = () => {
           ))}
         </div>
       </section> */}
+
+      <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Frequently Asked Questions</h2>
+
+    <Accordion items={faqs} ></Accordion>
 
     </div>
   );
