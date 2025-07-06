@@ -2,19 +2,10 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { FaBookOpen, FaUserGraduate, FaChalkboardTeacher, FaPlaneDeparture, FaQuoteLeft } from 'react-icons/fa';
+import UniversityLogoSlider from '../components/UniversityLogoSlider';
+import StudyAbroad from './StudyAbroad';
 
-const countries = [
-  { name: 'Australia', flag: 'https://flagcdn.com/au.svg', path: '/study-abroad/australia' },
-  { name: 'USA', flag: 'https://flagcdn.com/us.svg', path: '/study-abroad/usa' },
-  { name: 'New Zealand', flag: 'https://flagcdn.com/nz.svg', path: '/study-abroad/new-zealand' },
-  { name: 'Canada', flag: 'https://flagcdn.com/ca.svg', path: '/study-abroad/canada' },
-  { name: 'UK', flag: 'https://flagcdn.com/gb.svg', path: '/study-abroad/uk' },
-  { name: 'Denmark', flag: 'https://flagcdn.com/dk.svg', path: '/study-abroad/denmark' },
-  { name: 'Japan', flag: 'https://flagcdn.com/jp.svg', path: '/study-abroad/japan' },
-  { name: 'South Korea', flag: 'https://flagcdn.com/kr.svg', path: '/study-abroad/south-korea' },
-  { name: 'Germany', flag: 'https://flagcdn.com/de.svg', path: '/study-abroad/germany' },
 
-];
 
 const services = [
   {
@@ -145,8 +136,12 @@ const Home = () => {
         </div>
       </section>
 
+
+    <StudyAbroad> </StudyAbroad>
+
       {/* Study Abroad Grid */}
- <section className="py-16 bg-white" id='studyabroad'>
+ 
+ {/* <section className="py-16 bg-white" id='studyabroad'>
   <h2 className="text-3xl font-bold text-center text-secondary mb-8">
     Explore The Most Preferred Country For Higher Education
   </h2>
@@ -156,10 +151,10 @@ const Home = () => {
   key={country.name}
   className="group relative flex flex-col items-center justify-center bg-gray-50 rounded-lg shadow hover:shadow-lg p-4 transition h-28 sm:h-36 overflow-hidden"
 >
-  {/* Sliding Gradient Background */}
+
   <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0"></div>
 
-  {/* Content Layer */}
+
   <a href={country.path} className="relative z-10 flex flex-col items-center">
     <img
       src={country.flag}
@@ -174,8 +169,12 @@ const Home = () => {
 
     ))}
   </div>
-</section>
+</section> */}
 
+  <section className="py-10 sm:py-16 bg-gray-100 px-4" id='ourservices'>
+
+<UniversityLogoSlider> </UniversityLogoSlider>
+</section>
 
       {/* Services Grid */}
       <section className="py-10 sm:py-16 bg-gray-100 px-4" id='ourservices'>

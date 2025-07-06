@@ -13,7 +13,7 @@ const countryData = {
       'Safe and welcoming multicultural environment',
       'High quality of life and stunning nature',
     ],
-    img: 'https://media.istockphoto.com/id/535455441/photo/view-of-sydney-harbour-australia.webp?a=1&b=1&s=612x612&w=0&k=20&c=ppqJgsi9-pLlVIq9UGFO0meliF-YYd4gE9ilRwxhx6I=',
+    img: '/images/countries/aus.jpg',
   },
   usa: {
     name: 'USA',
@@ -26,7 +26,7 @@ const countryData = {
       'Diverse campus environments',
       'Flexible curriculum and internship opportunities',
     ],
-    img: 'https://media.istockphoto.com/id/525232662/photo/new-york-empire-state-building-and-statue-of-liberty.webp?a=1&b=1&s=612x612&w=0&k=20&c=TKIO6WmJV5IPagdotl0Eo2hli29n3X4XpuZt5Uq6pA4=',
+    img: '/images/countries/usa.jpg',
   },
   'new-zealand': {
     name: 'New Zealand',
@@ -39,7 +39,7 @@ const countryData = {
       'Work part-time during study',
       'Beautiful landscapes and outdoor lifestyle',
     ],
-    img: 'https://images.unsplash.com/photo-1729048563795-b001db99209f?w=600&auto=format&fit=crop&q=60',
+    img: '/images/countries/newzealand.webp',
   },
   canada: {
     name: 'Canada',
@@ -52,7 +52,7 @@ const countryData = {
       'Pathway to PR through education',
       'High safety standards and cultural diversity',
     ],
-    img: 'https://images.unsplash.com/photo-1530025809667-1f4bcff8e60f?w=600&auto=format&fit=crop&q=60',
+    img: '/images/countries/canada.jpg',
   },
   uk: {
     name: 'UK',
@@ -65,7 +65,7 @@ const countryData = {
       'High visa success rate',
       'Graduate route visa for 2 years after study',
     ],
-    img: 'https://media.istockphoto.com/id/526258817/photo/big-ben-in-sunny-day-london.webp?a=1&b=1&s=612x612&w=0&k=20&c=gD3tXFwIIz6IkAlBw7Lom8__IVqhAAGPC193v2ZIbZA=',
+    img: "/images/countries/Uk.jpg",
   },
   denmark: {
     name: 'Denmark',
@@ -78,7 +78,7 @@ const countryData = {
       'Focus on sustainability and design thinking',
       'Excellent public services and transport',
     ],
-    img: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=600&auto=format&fit=crop&q=60',
+    img: '/images/countries/denmark.webp',
   },
   japan: {
     name: 'Japan',
@@ -104,21 +104,9 @@ const countryData = {
       'Excellent career prospects in tech and media',
       'K-culture, safety, and innovation',
     ],
-    img: 'https://media.istockphoto.com/id/1096399496/photo/the-korean-flag-hanging-in-a-high-rise-building.webp?a=1&b=1&s=612x612&w=0&k=20&c=i1ggvzmpwqOfIg3o21YY2sTVoANSDBGGQw4DpOaZoT0=',
+    img: '/images/countries/south-korea.jpg',
   },
-  germany: {
-    name: 'Germany',
-    flag: '🇩🇪',
-    flagImg: 'https://flagcdn.com/w80/de.png',
-    description: 'Germany is famous for its tuition-free or low-cost education, strong engineering and science programs, and rich history.',
-    highlights: [
-      'No tuition fees in public universities',
-      'Strong focus on engineering, tech, and research',
-      'Opportunities to learn German and work during study',
-      'Robust industry-academia linkage',
-    ],
-    img: 'https://images.unsplash.com/photo-1618259278412-2819cbdea4dc?w=600&auto=format&fit=crop&q=60',
-  },
+
 };
 
 const StudyAbroadCountry = () => {

@@ -2,23 +2,25 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const countries = [
-  { name: 'Australia', flag: '🇦🇺', path: '/study-abroad/australia', src: 'https://flagcdn.com/au.svg' },
-  { name: 'USA', flag: '🇺🇸', path: '/study-abroad/usa', src: 'https://flagcdn.com/us.svg' },
-  { name: 'New Zealand', flag: '🇳🇿', path: '/study-abroad/new-zealand', src: 'https://flagcdn.com/nz.svg' },
-  { name: 'Canada', flag: '🇨🇦', path: '/study-abroad/canada', src: 'https://flagcdn.com/ca.svg' },
-  { name: 'UK', flag: '🇬🇧', path: '/study-abroad/uk', src: 'https://flagcdn.com/gb.svg' },
-  { name: 'Denmark', flag: '🇩🇰', path: '/study-abroad/denmark', src: 'https://flagcdn.com/dk.svg' },
-  { name: 'Japan', flag: '🇯🇵', path: '/study-abroad/japan', src: 'https://flagcdn.com/jp.svg' },
-  { name: 'South Korea', flag: '🇰🇷', path: '/study-abroad/south-korea', src: 'https://flagcdn.com/kr.svg' },
-  { name: 'Germany', flag: '🇩🇪', path: '/study-abroad/germany', src: 'https://flagcdn.com/de.svg' },
+  // { name: 'Australia', flag: '🇦🇺', path: '/study-abroad/australia', src: 'https://flagcdn.com/au.svg' },
+  // { name: 'USA', flag: '🇺🇸', path: '/study-abroad/usa', src: 'https://flagcdn.com/us.svg' },
+  // { name: 'New Zealand', flag: '🇳🇿', path: '/study-abroad/new-zealand', src: 'https://flagcdn.com/nz.svg' },
+  // { name: 'Canada', flag: '🇨🇦', path: '/study-abroad/canada', src: 'https://flagcdn.com/ca.svg' },
+  // { name: 'UK', flag: '🇬🇧', path: '/study-abroad/uk', src: 'https://flagcdn.com/gb.svg' },
+  // { name: 'Denmark', flag: '🇩🇰', path: '/study-abroad/denmark', src: 'https://flagcdn.com/dk.svg' },
+  // { name: 'South Korea', flag: '🇰🇷', path: '/study-abroad/south-korea', src: 'https://flagcdn.com/kr.svg' },
 ];
+
+const studyabroaddropdown = [
+  { name: "Top Destinations", path: '/#Topdestination' },
+  { name: "Test Preparation", path: '/test-preparation' },
+]
 
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Study Abroad', path: '/study-abroad', dropdown: true },
-  { name: 'Test Preparation', path: '/test-preparation' },
-  { name: 'Blog', path: '/blog' },
+  // { name: 'Test Preparation', path: '/test-preparation' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -54,12 +56,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-  if (open && isMobile) {
-    document.body.classList.add('overflow-hidden');
-  } else {
-    document.body.classList.remove('overflow-hidden');
-  }
-}, [open, isMobile]);
+    if (open && isMobile) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [open, isMobile]);
 
   return (
     <nav className={`backdrop-blur bg-white/80 ${scrolled ? 'bg-white/60 shadow-lg' : 'shadow'} sticky top-0 z-50 transition-all duration-300`}>
@@ -107,36 +109,30 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {dropdown && (
-                  <div className={`bg-white rounded shadow-lg border z-50 transition-all duration-200 ${isMobile ? 'static mt-2 w-full overflow-x-hidden' : 'absolute left-0 mt-2 w-[450px]'}`}>
-                    <div className={`grid ${isMobile ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3'} gap-2 p-4 max-h-[70vh] overflow-y-auto`}>
-                      {countries.map(country => (
+                  <div
+                    className={`bg-white rounded shadow-lg border z-50 transition-all duration-200 ${isMobile ? 'static mt-2 w-[350px] overflow-x-hidden' : 'absolute left-0 mt-2 w-[250px]'
+                      }`}
+                  >
+                    <div className="flex flex-col">
+                      {studyabroaddropdown.map((item) => (
                         <Link
-    key={country.name}
-    to={country.path}
-    className="group relative flex flex-col items-center gap-1 p-2 rounded cursor-pointer overflow-hidden transition"
-    onClick={() => { setOpen(false); setDropdown(false); }}
-  >
-
-    {/* Sliding background gradient */}
-    <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0 rounded"></div>
-
-    {/* Content on top */}
-    <div className="relative z-10 flex flex-col items-center gap-1">
-      <img
-        src={country.src}
-        alt={country.name}
-        className="size-8 border-2 border-transparent rounded-full transition-all duration-300"
-      />
-      <span className="text-xs sm:text-sm text-secondary font-semibold text-center group-hover:text-white transition-colors duration-300">
-        {country.name}
-      </span>
-    </div>
-
-  </Link>
+                          key={item.name}
+                          to={item.path}
+                          onClick={() => {
+                            setOpen(false);
+                            setDropdown(false);
+                          }}
+                          className="group flex flex-col items-center gap-1 p-2 rounded cursor-pointer overflow-hidden transition"
+                        >
+                          <span className="text-secondary font-semibold group-hover:text-primary transition-colors duration-300">
+                            {item.name}
+                          </span>
+                        </Link>
                       ))}
                     </div>
                   </div>
                 )}
+
               </div>
             ) : (
               <NavLink
