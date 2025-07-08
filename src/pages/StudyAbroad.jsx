@@ -36,7 +36,7 @@ const StudyAbroad = () => {
           <div
             key={country.slug}
             className={`group relative bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition hover:scale-105 border-4 
-            ${index === countries.length - 1 ? 'md:col-span-3 md:justify-self-center' : ''}`}
+            `}
           >
             {/* Sliding Background */}
             <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/90 before:to-secondary/90 before:translate-y-full group-hover:before:translate-y-0 before:transition-transform before:duration-500 before:z-0 rounded-xl"></div>
