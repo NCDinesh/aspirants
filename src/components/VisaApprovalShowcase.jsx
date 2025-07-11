@@ -87,13 +87,13 @@ const VisaApprovalShowcase = () => {
             onClick={prevSlide}
             className="bg-primary text-white px-4 py-2 rounded shadow hover:bg-primary/80"
           >
-            ⬅ Prev
+             Prev
           </button>
           <button
             onClick={nextSlide}
             className="bg-secondary text-white px-4 py-2 rounded shadow hover:bg-secondary/80"
           >
-            Next ➡
+            Next
           </button>
         </div>
       </div>

@@ -165,7 +165,7 @@ const Home = () => {
   </div>
 </section> */}
 
-  <section className="py-10 sm:py-16 bg-gray-100 px-4" id='ourservices'>
+  <section className="py-10 sm:py-16  px-4 mb-4" id='ourservices'>
 
 <UniversityLogoSlider> </UniversityLogoSlider>
 </section>
