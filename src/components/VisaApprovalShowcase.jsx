@@ -66,7 +66,7 @@ const VisaApprovalShowcase = () => {
                   <img
                     src={student.image}
                     alt={student.name}
-                    className="object-cover w-full h-full"
+                    className="object-contain  w-full h-full"
                   />
                 </div>
                 {/* Back */}
