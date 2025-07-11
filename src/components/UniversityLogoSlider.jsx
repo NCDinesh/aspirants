@@ -1,16 +1,29 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const logos = [
-  '/images/universities/University-of-Idaho-1024x283.webp',
-  '/images/universities/university-of-chicago.jpg',
-  '/images/universities/australian-catholic-university.png',
-  '/images/universities/university-of-westernaustralia.png',
-  '/images/universities/university-of-newcastleaustralia.png',
-'/images/universities/University-of-Idaho-1024x283.webp',
-  '/images/universities/university-of-chicago.jpg',
-  '/images/universities/australian-catholic-university.png',
-  '/images/universities/university-of-westernaustralia.png',
-  '/images/universities/university-of-newcastleaustralia.png',
+  '/images/universities/BPP-university.png',
+  '/images/universities/Coventry-university.png',
+  '/images/universities/Brimingham.png',
+  '/images/universities/curtin-university.png',
+  '/images/universities/eastlondon.png',
+  '/images/universities/HSU-university.png',
+  '/images/universities/huddersfield-university.png',
+  '/images/universities/Latrobe-university.png',
+  '/images/universities/LMU-university.png',
+  '/images/universities/MIT-university.png',
+  '/images/universities/notredame-university.png',
+  '/images/universities/Ravensbourne-university.png',
+  '/images/universities/saibt-university.png',
+  '/images/universities/sunderland-university.png',
+  '/images/universities/VIT-university.png',
+  '/images/universities/westlondon.png',
+  '/images/universities/leedstrinity.png',
+  '/images/universities/greenwich.png',
+  '/images/universities/wolverhamptom.jpeg',
+  '/images/universities/chester.png',
+  '/images/universities/porthsmouth.png',
+  '/images/universities/york.png',
+  
 ];
 
 const UniversityLogoSlider = () => {

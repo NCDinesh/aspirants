@@ -5,6 +5,7 @@ import { FaBookOpen, FaUserGraduate, FaChalkboardTeacher, FaPlaneDeparture, FaQu
 import UniversityLogoSlider from '../components/UniversityLogoSlider';
 import StudyAbroad from './StudyAbroad';
 import Accordion from '../components/FAQ';
+import VisaApprovalShowcase from  "../components/VisaApprovalShowcase"
 
 
 
@@ -130,6 +131,7 @@ const Home = () => {
 
 
     <StudyAbroad> </StudyAbroad>
+    <VisaApprovalShowcase></VisaApprovalShowcase>
 
       {/* Study Abroad Grid */}
  
